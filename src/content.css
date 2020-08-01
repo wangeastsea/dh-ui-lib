@@ -1,0 +1,15 @@
+/* 内容区 */
+
+.my-content {
+    box-sizing: border-box;
+    position: relative;
+    overflow-y: auto;
+}
+
+.my-header ~ .my-content{
+    padding-top: 2.3rem;
+}
+
+.my-navbar ~ .my-content {
+    padding-bottom: 2.5rem;
+}   
