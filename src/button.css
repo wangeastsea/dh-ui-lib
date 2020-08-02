@@ -1,0 +1,57 @@
+/* 按钮默认样式 */
+/**块级元素的文字，可以使用 text-align: center;进行居中。*/
+/**
+user-select:none;” 表示用户不能对按钮的内容进行选中
+*/
+.my-btn{
+    display: block;
+    position: relative;
+    width: 10rem;
+    margin: 0 auto;
+    padding: .5rem 0;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    font-size: .7rem;
+    text-align: center;
+    color: #000000;
+    border-radius: 5px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    user-select:none;
+}
+
+/* 定制主操作按钮样式 */
+.my-btn.my-btn-primary{
+    background-color: #1AAD19;
+    color: #fff;
+}
+
+/* 定制警示类按钮样式 */
+.my-btn.my-btn-warning{
+    background-color: #E64340;
+    color: #fff;
+}
+
+/* 定制不可用按钮的样式 */
+.my-btn.my-btn-disabled{
+    background-color: #F7F7F7;
+    color: #999;
+    opacity: .6;
+}
+/* 大按钮 */
+.my-btn.my-btn-large{
+    width: 100%;
+    font-size: .9rem;
+    border-left: none;
+    border-right: none;
+    border-radius: 0;
+}
+
+/* 小按钮 */
+.my-btn.my-btn-small{
+    display: inline-block;
+    width: 3rem;
+    padding: .2rem 0;
+    font-size: .7rem;
+}

@@ -1,11 +1,8 @@
-/*
- * @Author: Harry
- * @Date: 2020-08-01 11:03:01 
- */
- 
+
 /* 屏幕宽度在340px至410px时，基准尺寸使用20px */
 html{
     font-size: 20px;
+    height: 100%;
 }
 /* 屏幕宽度小于340px时，基准尺寸使用18px */
 @media (max-width: 340px){ 
@@ -20,8 +17,9 @@ html{
     }
 }
 
-/* body默认样式 */  
+/* body默认样式 */
 body{
+    height: 100%;
     max-width: 640px;
     margin: 0 auto;
     background: #f8f8f8;
@@ -29,7 +27,6 @@ body{
     -webkit-overflow-scrolling: touch;
 }
 
-/* 页面蒙版 */
 .my-mask{
     position: fixed;
     top: 0;

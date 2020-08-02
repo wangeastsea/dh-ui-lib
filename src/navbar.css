@@ -4,7 +4,7 @@
     box-sizing: border-box;
     bottom: 0;
     width: 100%;
-    max-width: 640px;
+    /* max-width: 640px; */
     height: 2.5rem;
     border-top: 1px solid #ddd;
     z-index: 200;
