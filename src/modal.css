@@ -1,0 +1,21 @@
+.my-modal{
+    display: none;
+}
+/* 控制模态框的显示 */
+.my-modal.show{
+    display: block;
+}
+/* 模态框窗口容器 */
+.my-modal .my-modal-wrap{
+    position: absolute;
+    width: 75%;
+    max-width: 480px;
+    top: 45%;
+    transform: translateY(-50%);
+    left: 0;
+    right: 0;
+    margin: auto;
+    background: #fff;
+    border-radius: .4rem;
+    z-index: 301;
+}
