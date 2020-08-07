@@ -19,3 +19,65 @@
     border-radius: .4rem;
     z-index: 301;
 }
+
+/* 模态框内容区 */
+.my-modal .my-modal-body{
+    padding: 1.8rem .8rem 1.5rem;
+    text-align: center;
+    font-size: .8rem;
+    line-height: 1.2rem;
+    overflow: hidden; 
+}
+/* 模态框尾部 */
+.my-modal .my-modal-footer{
+    display: flex;
+    border-top: 1px solid #ddd;
+}
+
+/* 模态框尾部里按钮的样式 */
+.my-modal .my-modal-footer .my-btn{
+    border: none;
+    border-radius: 0;
+    width: 100%;
+    font-size: .8rem;
+}
+/* 模态框尾部中的按钮加上分隔 */
+.my-modal .my-modal-footer .my-btn + .my-btn{
+    border-left: 1px solid #ddd;
+}
+
+/* 控制模态框内容区的内边距 */
+.my-modal .my-modal-body.no-padding {
+    padding: 0;
+}
+
+/* 图片形式的模态框样式 */
+.my-modal .my-modal-body .my-modal-img{
+    display: block;
+    width: 100%;
+    border-radius: .3rem;
+}
+
+/* 图片形式的模态框样式 */
+.my-modal .my-modal-body .my-modal-img{
+    display: block;
+    width: 100%;
+    border-radius: .3rem;
+}
+
+/* 纯图片模态框里的关闭按钮 */
+.my-modal .my-modal-close{
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 1.3rem;
+    line-height: 1.3rem;
+    margin: auto;
+    bottom: -3rem;
+    text-align: center;
+    font-size: .8rem;
+    font-weight: 100;
+    color: #eee;
+    border: 1px solid #eee;
+    border-radius: 50%;
+}
