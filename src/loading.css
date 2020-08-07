@@ -1,0 +1,47 @@
+/* 页面加载提示组件 */
+.my-loading{
+    padding:1rem 0;
+    text-align: center;
+}
+
+.my-loading > .my-loading-icon {
+    font-size: 4.5rem;
+    color:  rgba(0, 0, 0, .05);
+}
+
+.my-loading > .my-loading-info {
+    display: block;
+    margin-top: .6rem;
+    font-size: .8rem;
+    color: #ccc;
+}
+
+/* 单行加载提示组件 */
+.my-loading-inline {
+    /* 上1.5rem ；左、右auto；下1rem */
+    margin: 1.5rem auto 1rem;
+    width: 12.5rem;
+    position: relative;
+    box-sizing: border-box;
+    text-align: center;
+    color: #999;
+    height: 1rem;
+    border-top: 1px solid rgba(0,0,0,.1)
+
+}
+
+.my-loading-inline > .my-loading-info {
+    display: inline-block;
+    padding: 0 0.5rem;
+    position: relative;
+    top: -.7rem;
+    height: 1rem;
+    line-height: 1rem;
+    font-size: .7rem;
+    background: #fff;
+}
+
+/* 单行加载提示组件的图标 */
+.my-loading-inline > .my-loading-info > .my-loading-icon{
+    color: rgba(0, 0, 0, .2);
+}
