@@ -1,0 +1,39 @@
+/* Toast提示工具 */
+
+/* 需要显示的时候会使用 JS 动态的把组件添加到文档中。
+使用添加“show”这个 class，从而达到入场的效果。
+Toast 组件需要消失的时候，去掉“show”这个 class，从而达到出场的效果。
+等组件完全消失后，再使用 JS 把整个 Toast 的 Dom 移除掉。 */
+/* 这样做是因为 Toast 是一个一次性的组件，不使用的时候不需要让它停留在文档中。这样做还能避免当元素是“opacity: 0;”的时候会挡住底层内容区的操作。 */
+.my-toast{
+    position: fixed;
+    width: 7rem;
+    top: 45%;
+    transform: translateY(-40%);
+    left: 0;
+    right: 0;
+    margin: auto;
+    padding: 1rem 0;
+    opacity: 0;
+    color: #fff;
+    text-align: center;
+    background: rgba(0, 0, 0, .6);
+    border-radius: .4rem;
+    transition: transform .3s opacity .3s;
+    z-index: 301;
+}
+.my-toast.show {
+    opacity: 1;
+    transform: translateY(-50%);
+}
+
+/* Toast组件中的图标 */
+.my-toast > .my-toast-icon{
+    font-size: 2.2rem;
+}
+
+/* Toast组件中的文本部分 */
+.my-toast > .my-toast-info{
+    margin-top: .5rem;
+    font-size: .7rem;
+}
